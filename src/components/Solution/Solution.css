@@ -1,0 +1,51 @@
+.solutionContainer {
+    font-size: 2rem;
+    min-height: 100vh;
+    width: 70%;
+    margin: 0 auto;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.solutionContainer h1:nth-child(2){
+    color: transparent;
+    padding: 1rem 2rem;
+    background: linear-gradient(to right, rgb(208, 83, 208), rgb(255, 255, 255));
+    background-clip: text;
+    flex-direction: row;
+}
+
+.solutionContainer > p {
+    background-color: rgba(0, 0, 0,.6);
+    padding: 5rem;
+    height: fit-content;
+    margin-bottom: 3rem;
+
+}
+.asanasContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.asanasContainer > div {
+    text-align: center;
+    margin: 1rem;
+    
+}
+
+.asanasContainer > div > img {
+    object-fit: cover;
+    width: 20rem;
+    height: 15rem;
+    opacity: .8;
+}
+
+@media only screen and (max-width: 900px) {
+    .solutionContainer {
+        width: 90%;
+    }
+}

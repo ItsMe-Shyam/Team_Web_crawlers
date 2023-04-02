@@ -1,0 +1,37 @@
+.categoryContainer > div > img {
+    height: 30rem;
+    width: 33rem;
+    border-radius: 100%;
+    opacity: .7;
+}
+
+.categoryContainer {
+    display: flex;
+    text-align: center;
+}
+
+.categoryContainer > div {
+    margin: 2rem;
+}
+.categoryContainer > div > button {
+    margin: 2rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    border: 2px solid white;
+    transition: all .3s ease;
+
+}
+.categoryContainer > div > button:hover {
+    background-color: white;
+    color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    .categoryContainer {
+        flex-direction: column;
+    }
+}

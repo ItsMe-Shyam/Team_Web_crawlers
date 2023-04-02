@@ -1,0 +1,60 @@
+.sessionsContainer {
+    min-height: 100vh;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.sessionsContainer > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 3rem;
+    height:40rem;
+    width: 40rem;
+    background-color: rgba(0, 0, 0,.4);
+    margin: 2rem;
+    padding: 1rem;
+
+}
+.sessionsContainer h1 {
+    font-size: 3rem;
+    color: transparent;
+    background: linear-gradient(to right, rgb(208, 83, 208), rgb(255, 255, 255));
+    background-clip: text;
+}
+.sessionsContainer p {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.sessionsContainer img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 100px;
+}
+.sessionsContainer button {
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    font-size: 2rem;
+    transition: all .4s ease;
+}
+
+.sessionsContainer button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+@media only screen and (max-width: 900px) {
+    .sessionsContainer{
+        width: 100%;
+    }
+}

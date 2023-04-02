@@ -1,0 +1,184 @@
+.testContainer {
+    color: white;
+    font-size: 1.5rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 80vh;
+    padding: 10vh 0;
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    letter-spacing: .2rem;
+    line-height: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.question {
+    padding: 10rem;
+    background-color: rgba(0, 0, 0,.5);
+}
+
+.question > button {
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    font-size: 2rem;
+    transition: all .4s ease;
+}
+
+.question > button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+.resultsContainer {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* align-items: center; */
+}
+
+.animation {
+    height: 20vh;
+    width: 30vw;
+    margin: 5rem 0;
+    transform: translateY(-15rem);
+}
+.positiveNews {
+    margin-top: 5rem;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.resultsContainerParent {
+       text-align: center;
+       font-family:'Courier New', Courier, monospace;
+       min-height: 100vh;
+}
+
+.resultsContainerParent > button {
+    background-color: transparent;
+    border: 2px solid white;
+    font-family:'Courier New', Courier, monospace;
+    margin: 5rem 0;
+    padding: 1rem 5rem;
+    color: white;
+    transition: all .3s ease;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.resultsContainerParent > button:hover {
+    background-color: white;
+    color: black;
+    transform: translateY(-1rem);
+    cursor: pointer;
+}
+
+.resultCard {
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: fit-content;
+    width: 25rem;
+    height: 50rem;
+    margin: 2rem;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    line-height: 2.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.resultCard  h1 {
+    text-align: center;
+    background: linear-gradient(to right, rgb(208, 83, 208), rgba(222, 46, 208, 0.984));
+    background-clip: text;
+    color: transparent;
+
+}
+.resultCard  h2 {
+    font-size: 2rem;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.resultCard > p {
+    font-size: 1.5rem;
+
+}
+
+.solutionLinks button{
+    margin-bottom: 1.5rem;
+    border: none;
+    border: 2px solid white;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 1rem 3rem;
+    transition: all .2s ease;
+}
+.solutionLinks button:hover {
+    transform: translateY(-.7rem);
+}
+
+.popupContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 110vh;
+    width: 100vw;
+    z-index: 100;
+    background-color: rgba(0, 0, 0,.5);
+}
+
+.popupContainer h1 {
+    color: white;
+    font-size: 4rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    display: inline-block;
+}
+.popupContainer input {
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+}
+.popupContainer button {
+    padding: 1rem 2rem;
+    width: 100%;
+    background: linear-gradient(to right, rgb(208, 83, 208), rgba(222, 46, 208, 0.984));;
+    color: white;
+    font-size: 2.3rem;
+    border-radius: 100px;
+    border: none;
+    /* cursor: pointer; */
+    transition: all .3s ease;
+}
+.popupContainer button:hover {
+    z-index: 1000;
+    background-color: rgb(34, 31, 34);
+    transform: translateY(-.5rem);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+    .animation {
+        transform: translateY(4rem);
+    }
+    .testContainer {
+        width: 80%;
+    }
+}

@@ -1,0 +1,25 @@
+.aboutContainer {
+    min-height: 100vh;
+    width: 60%;
+    color: white;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 10rem;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+.aboutContainer div p {
+    background-color: rgba(0,0,0,0.6);
+    padding: 3rem;
+}
+.aboutContainer h1 {
+    background: linear-gradient(to right, rgb(208, 83, 208), rgb(255, 255, 255));
+    background-clip: text;
+    color: transparent;
+    letter-spacing: .6rem;
+}
+
+.videoContainer video,.videoContainer  {
+    width: 100%;
+    opacity: .9;
+}
